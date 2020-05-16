@@ -9,7 +9,7 @@ API's used in this course:
         
         
         
- ETL (how to fetch from an API:
+ ETL +  postgresql (how to fetch from an API:
               
 ## Fetch from an API
 
