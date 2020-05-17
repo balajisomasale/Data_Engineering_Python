@@ -31,21 +31,8 @@ Goal: We have two tables with course and ratings for 3 users. Following things a
                 
                 1) Thinking for logic : Build(Dont Implement) a relation between two table: wirte sql query to group up the things 
                 2) As we use ETL Approach : Extract the data first and then transform the data
-                3) While Transforming; Just write the logic: group up the things as follows 
-                
-                
-                # Complete the transformation function
-                def transform_avg_rating(rating_data):
-                  # Group by course_id and extract average rating per course
-                        avg_rating = rating_data.groupby('course_id').rating.mean()
-                  # Return sorted average ratings per course
-                        sort_rating = avg_rating.sort_values(ascending=False).reset_index()
-                        return sort_rating
-
-                # Extract the rating data into a DataFrame    
-                rating_data = extract_rating_data(db_engines)
-
-                # Use transform_avg_rating on the extracted data and print results
-                avg_rating_data = transform_avg_rating(rating_data)
-                print(avg_rating_data) 
+                3) While Transforming; Just write the logic: 
+                4) Load the data into postgre table to do Airflow job=> Sending Email daily based on the ratings of the courses
+            
+Check for the Capstone porject here => https://github.com/balajisomasale/Data_Engineering_Python/blob/master/Introduction%20to%20Data%20Engineering/1%20-%20Introduction%20to%20Data%20Engineering.ipynb
  
